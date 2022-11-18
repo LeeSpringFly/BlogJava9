@@ -1,12 +1,12 @@
-# Java 9 “Iˆê±“Á«
+# Java 9 çš„ä¸€äº›ç‰¹æ€§
 
-??ˆê± java 9 “IV—p–@
+è®°å½•ä¸€äº› java 9 çš„æ–°ç”¨æ³•
 
-## 1  W‡H™Ê•û–@
+## 1  é›†åˆå·¥å‚æ–¹æ³•
 
-ListCSet ˜a Map ÚŒû’†Vú ```of()``` •û–@—p˜°‰õ‘¬?Œš?—á
+Listï¼ŒSet å’Œ Map æ¥å£ä¸­æ–°å¢ ```of()``` æ–¹æ³•ç”¨äºå¿«é€Ÿåˆ›å»ºå®ä¾‹
 
-**—áq**
+**ä¾‹å­**
 
 ``` java
 public class DemoApplication {
@@ -29,28 +29,24 @@ public class DemoApplication {
 }
 ```
 
-**?o**
+**è¾“å‡º**
 
-``` bash
-[C, B, A]
-[A, B, C]
-{C=Cat, B=Boy, A=Apple}
-{C=Cat, B=Boy, A=Apple}
-```
+> [C, B, A]
+> [A, B, C]
+> {C=Cat, B=Boy, A=Apple}
+> {C=Cat, B=Boy, A=Apple}
 
+**å¼•ç”¨**
 
-
-**ˆø—p**
-
-[Runoob Java 9  W‡H™Ê•û–@](https://www.runoob.com/java/java9-collection-factory-methods.html)
+[Runoob Java 9  é›†åˆå·¥å‚æ–¹æ³•](https://www.runoob.com/java/java9-collection-factory-methods.html)
 
 ## 2 try-with-resource
 
-```try-with-resource``` ’è?—¹ˆê˜¢ˆ½‘½˜¢?Œ¹Cˆê˜¢?Œ¹•K?¥ˆê˜¢İ’ö˜?‘©@”í??“I?ÛCŠ—L??—¹ ```java.lang.AutoCloseable``` “I?Û‰ï”í—p˜°“–ì?Œ¹B
+```try-with-resource``` å®šä¹‰äº†ä¸€ä¸ªæˆ–å¤šä¸ªèµ„æºï¼Œä¸€ä¸ªèµ„æºå¿…é¡»æ˜¯ä¸€ä¸ªåœ¨ç¨‹åºç»“æŸåè¢«å…³é—­çš„å¯¹è±¡ï¼Œæ‰€æœ‰å®ç°äº† ```java.lang.AutoCloseable``` çš„å¯¹è±¡ä¼šè¢«ç”¨äºå½“ä½œèµ„æºã€‚
 
-İ Java 9 ’†C”@‰Ê—Lˆê˜¢ final ˆ½Ò“™Á˜° final “I?—ÊC–ç‰Â—p˜° ``` try-with-resource``` º–¼’†
+åœ¨ Java 9 ä¸­ï¼Œå¦‚æœæœ‰ä¸€ä¸ª final æˆ–è€…ç­‰æ•ˆäº final çš„å˜é‡ï¼Œä¹Ÿå¯ç”¨äº ``` try-with-resource``` å£°åä¸­
 
-**—áq**
+**ä¾‹å­**
 
 ``` java
 public class DemoApplication {
@@ -77,24 +73,20 @@ public class DemoApplication {
 }
 ```
 
-**?o**
+**è¾“å‡º**
 
-``` bash
-test
-test
-```
+> test
+> test
 
+**å¼•ç”¨**
 
-
-**ˆø—p**
-
-[Runoob Java 9  ‰ü?“I try-with-resources](https://www.runoob.com/java/java9-try-with-resources-improvement.html)
+[Runoob Java 9  æ”¹è¿›çš„ try-with-resources](https://www.runoob.com/java/java9-try-with-resources-improvement.html)
 
 [Oracle 8 More Concise try-with-resources Statements](https://docs.oracle.com/en/java/javase/14/language/try-resources.html)
 
-## 3 Optional ?
+## 3 Optional ç±»
 
-“Y‰Á—¹ 3 ˜¢‰ü?“I•û–@
+æ·»åŠ äº† 3 ä¸ªæ”¹è¿›çš„æ–¹æ³•
 
 - stream()
 - ifPresentOrElse()
@@ -102,17 +94,17 @@ test
 
 ### 12.1 stream() 
 
-**•û–@**
+**æ–¹æ³•**
 
 ``` java
 public Stream<T> stream()
 ```
 
-**•`q**
+**æè¿°**
 
-”@‰Ê?‘¶İC•Ô‰ñ?“I StreamC”Û?•Ô‰ñ empty Stream
+å¦‚æœå€¼å­˜åœ¨ï¼Œè¿”å›å€¼çš„ Streamï¼Œå¦åˆ™è¿”å› empty Stream
 
-**—áq**
+**ä¾‹å­**
 
 ``` java
 public static void main(String[] args) {
@@ -137,28 +129,24 @@ public static void main(String[] args) {
 }
 ```
 
-**?o**
+**è¾“å‡º**
 
-``` bash
-[A, B]
-[A, B]
-```
-
-
+> [A, B]
+> [A, B]
 
 ### 12.2 ifPresentOrElse() 
 
-**•û–@**
+**æ–¹æ³•**
 
 ``` java
 public void ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
 ```
 
-**•`q**
+**æè¿°**
 
-”@‰Ê?‘¶İC?s•ïŠÜ?“¾?’è‘€ìC”Û??sŠî˜° empty “I‘€ì
+å¦‚æœå€¼å­˜åœ¨ï¼Œæ‰§è¡ŒåŒ…å«å€¼å¾—ç»™å®šæ“ä½œï¼Œå¦åˆ™æ‰§è¡ŒåŸºäº empty çš„æ“ä½œ
 
-**—áq**
+**ä¾‹å­**
 
 ``` java
 public static void main(String[] args) {
@@ -176,28 +164,24 @@ public static void main(String[] args) {
 }
 ```
 
-**?o**
+**è¾“å‡º**
 
-``` bash
-Value: 1
-Not Present.
-```
-
-
+> Value: 1
+> Not Present.
 
 ### 12.3 or() 
 
-**•û–@**
+**æ–¹æ³•**
 
 ```java
 public Optional<T> or(Supplier<? extends Optional<? extends T>> supplier)
 ```
 
-**•`q**
+**æè¿°**
 
-”@‰Ê?‘¶İC•Ô‰ñ??“I OptionalC”Û?•Ô‰ñ?’è?“I Optional
+å¦‚æœå€¼å­˜åœ¨ï¼Œè¿”å›è¯¥å€¼çš„ Optionalï¼Œå¦åˆ™è¿”å›ç»™å®šå€¼çš„ Optional
 
-**—áq**
+**ä¾‹å­**
 
 ``` java
 public static void main(String[] args) {
@@ -211,21 +195,17 @@ public static void main(String[] args) {
 }
 ```
 
-**?o**
+**è¾“å‡º**
 
-``` bash
-Value: Mahesh
-Value: Not Present
-```
+> Value: Mahesh
+> Value: Not Present
 
+**å¼•ç”¨**
 
-
-**ˆø—p**
-
-[Runoob Java 9  ‰ü?“I Optional ?](https://www.runoob.com/java/java9-optional-class-improvements.html)
+[Runoob Java 9  æ”¹è¿›çš„ Optional ç±»](https://www.runoob.com/java/java9-optional-class-improvements.html)
 
 [Oracle](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html)
 
-## ?“W A X‘½“à—e
+## æ‰©å±• A æ›´å¤šå†…å®¹
 
-[runoob Java 9 V“Á«](https://www.runoob.com/java/java9-new-features.html)
+[runoob Java 9 æ–°ç‰¹æ€§](https://www.runoob.com/java/java9-new-features.html)
